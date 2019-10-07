@@ -39,7 +39,9 @@ export default {
   methods: {
     getDetailsAll(id) {
       let toProduct = this.products.find((product) => product.id === id);
-      this.$emit('getDetailsProduct', toProduct)
+      if (toProduct) {
+        this.$emit('getDetailsProduct', toProduct)
+      }
     }
   },
   components: {

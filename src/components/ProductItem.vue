@@ -21,7 +21,7 @@ export default {
   },
   methods: {
     getDetailsClicked() {
-      this.$emit("getDetails", this.product.title)
+      this.$emit("getDetails", this.product.id)
     }
   }
 }
