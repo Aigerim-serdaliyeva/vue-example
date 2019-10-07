@@ -38,6 +38,7 @@ export default {
   },
   methods: {
     getDetailsAll(id) {
+      debugger;
       let toProduct = this.products.find((product) => product.id === id);
       if (toProduct) {
         this.$emit('getDetailsProduct', toProduct)

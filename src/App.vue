@@ -21,6 +21,7 @@ export default {
   },
   methods: {
     getDetailsProduct(product) {
+      debugger
       this.selectedProduct = product
     }
   }

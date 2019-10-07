@@ -21,6 +21,7 @@ export default {
   },
   methods: {
     getDetailsClicked() {
+      debugger
       this.$emit("getDetails", this.product.id)
     }
   }

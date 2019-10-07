@@ -16,6 +16,10 @@ export default {
       type: Object,
       required: true
     }
+  },
+  updated() {
+    console.log(this.product);
+    debugger;
   }
 }
 </script>
