@@ -1,6 +1,6 @@
 <template>
   <div id="app" class="container">
-    <product-list @getDetailsProduct="getDetailsProduct"></product-list>
+    <product-list @getDetailsProduct="selectedProduct = $event"></product-list>
     <product-details :product="selectedProduct"></product-details>
   </div>
 </template>
@@ -20,10 +20,10 @@ export default {
     ProductDetails
   },
   methods: {
-    getDetailsProduct(product) {
-      debugger
-      this.selectedProduct = product
-    }
+    // getDetailsProduct(product) {
+    //   debugger
+    //   this.selectedProduct = product
+    // }
   }
 }
 </script>
